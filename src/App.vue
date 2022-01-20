@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
+      <!-- Siempre manejar los names de preferenia - Escabilidad y mantenibilidad -->
       <router-link :to="{ name: 'EventList' }">Events</router-link> |
       <router-link :to="{ name: 'About' }">About</router-link>
     </div>
+    <!-- Aqui ira contenido que deseamos se muestre en todos nuestros componentes hijos -->
+    <!-- <h1> Events for Good </h1> --> 
     <router-view />
   </div>
 </template>
